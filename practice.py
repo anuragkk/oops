@@ -23,18 +23,37 @@
 # print(user_2.followers)
 # print(user_2.following)
 
+#
+# class Car:
+#     def __init__(self, make, model, manufacturing_year, mileage):
+#         self.make = make
+#         self.model = model
+#         self.manufacturing_year = manufacturing_year
+#         self.mileage = mileage
+#
+#     def display_info(self):
+#         print(f"Make is {self.make}, Model is {self.model}, "
+#               f"Manufactured in year {self.manufacturing_year} and mileage: {self.mileage}")
+#
+#
+# my_car = Car("Toyota", "Corolla", "2020", 15000)
+# my_car.display_info()
+#
 
-class Car:
-    def __init__(self, make, model, manufacturing_year, mileage):
-        self.make = make
-        self.model = model
-        self.manufacturing_year = manufacturing_year
-        self.mileage = mileage
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
 
-    def display_info(self):
-        print(f"Make is {self.make}, Model is {self.model}, "
-              f"Manufactured in year {self.manufacturing_year} and mileage: {self.mileage}")
+    def calculate_area(self):
+        area = self.width * self.length
+        return area
+
+    def calculate_perimeter(self):
+        permimeter = 2 * (self.length + self.width)
+        return permimeter
 
 
-my_car = Car("Toyota", "Corolla", "2020", 15000)
-my_car.display_info()
+r1 = Rectangle(5, 5)
+print(r1.calculate_area())
+print(r1.calculate_perimeter())
